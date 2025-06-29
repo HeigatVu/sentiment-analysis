@@ -14,8 +14,8 @@ This repository provides a step-by-step implementation of a text classification 
 
 - Model Training and Evaluation: Building, training, and evaluating Decision Tree and Random Forest models.
 
-Dataset
-The project uses the IMDB Dataset of 50K Movie Reviews. This dataset contains 50,000 reviews, evenly split between positive and negative sentiments.
+## Dataset
+The project uses the [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews). This dataset contains 50,000 reviews, evenly split between positive and negative sentiments.
 
 Methodology
 The project follows a structured machine learning pipeline:
