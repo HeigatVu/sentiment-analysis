@@ -58,16 +58,22 @@ The project follows a structured machine learning pipeline:
 
 1. Clone the repository:
 ```
-git clone [your-github-repo-url]
-cd [repository-name]
+git clone https://github.com/HeigatVu/sentiment-analysis.git
+cd sentiment-analysis
 ```
 
-2. Install dependencies:
+2. Set up the environment:
 ```
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Download NLTK data:
+3. Install dependencies:
+```
+pip install pandas notebook nltk scikit-learn matplotlib seaborn beautifulsoup4 contractions
+```
+
+4. Download NLTK data:
 Run the following Python script to download the necessary NLTK packages:
 ```
 import nltk
@@ -75,8 +81,8 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 ```
 
-4. Run the analysis:
-Execute the main Python script or Jupyter Notebook (`main.py` or `analysis.ipynb`) to perform the data analysis, model training, and evaluation.
-```
-python main.py
-```
+5. Run the notebooks:
+Launch Jupyter Notebook and run the notebooks in the following order for the best experience:
+   1. `preprocessing.ipynb`
+   2. `EDA.ipynb`
+   3. `model.ipynb`
