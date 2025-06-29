@@ -1,18 +1,18 @@
 # Sentiment Analysis on IMDB Movie Reviews
 This project implements and evaluates classical machine learning models for sentiment analysis on the IMDB movie review dataset. The goal is to classify movie reviews as either 'positive' or 'negative' based on their text content.
 
-Project Overview
+## Project Overview
 This repository provides a step-by-step implementation of a text classification pipeline, including:
 
-Data Loading and Cleaning: Ingesting the dataset and removing duplicate entries.
+- Data Loading and Cleaning: Ingesting the dataset and removing duplicate entries.
 
-Exploratory Data Analysis (EDA): Analyzing the distribution of sentiment labels and the length of reviews.
+- Exploratory Data Analysis (EDA): Analyzing the distribution of sentiment labels and the length of reviews.
 
-Text Preprocessing: A comprehensive workflow to clean and normalize the raw text data.
+- Text Preprocessing: A comprehensive workflow to clean and normalize the raw text data.
 
-Feature Engineering: Converting text into numerical vectors using TF-IDF.
+- Feature Engineering: Converting text into numerical vectors using TF-IDF.
 
-Model Training and Evaluation: Building, training, and evaluating Decision Tree and Random Forest models.
+- Model Training and Evaluation: Building, training, and evaluating Decision Tree and Random Forest models.
 
 Dataset
 The project uses the IMDB Dataset of 50K Movie Reviews. This dataset contains 50,000 reviews, evenly split between positive and negative sentiments.
