@@ -21,57 +21,62 @@ The project uses the [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/
 The project follows a structured machine learning pipeline:
 
 1. Preprocessing & EDA: 
-  - Removed HTML tags, punctuation, numbers, and emojis.
-
-  - Expanded contractions and converted text to lowercase.
-
-  - Performed lemmatization and removed English stopwords.
-
-  - Visualized the class balance and distribution of word counts per review.
+    - Removed HTML tags, punctuation, numbers, and emojis.
+  
+    - Expanded contractions and converted text to lowercase.
+  
+    - Performed lemmatization and removed English stopwords.
+  
+    - Visualized the class balance and distribution of word counts per review.
 
 2. Text Representation:
 
-  - Used `TfidfVectorizer` from Scikit-learn to convert preprocessed text into a matrix of TF-IDF features. A vocabulary size of 10,000 features was used.
+    - Used `TfidfVectorizer` from Scikit-learn to convert preprocessed text into a matrix of TF-IDF features. A vocabulary size of 10,000 features was used.
 
-Modeling and Evaluation:
+3. Modeling and Evaluation:
 
-The data was split into an 80% training set and a 20% testing set.
+    - The data was split into an 80% training set and a 20% testing set.
 
-Two models were trained and compared:
+    - Two models were trained and compared:
 
-DecisionTreeClassifier
+        - `DecisionTreeClassifier`
+        
+        - `RandomForestClassifier`
 
-RandomForestClassifier
+    - Model performance was evaluated using the accuracy metric.
 
-Model performance was evaluated using the accuracy metric.
+## Technology Stack
+  - Data Manipulation & Analysis: Pandas, NumPy
 
-Technology Stack
-Data Manipulation & Analysis: Pandas, NumPy
+  - Text Processing: NLTK, BeautifulSoup4, contractions
 
-Text Processing: NLTK, BeautifulSoup4, contractions
+  - Machine Learning: Scikit-learn
 
-Machine Learning: Scikit-learn
+  - Data Visualization: Matplotlib, Seaborn
 
-Data Visualization: Matplotlib, Seaborn
+## How to Run
 
-How to Run
-Clone the repository:
-
+1. Clone the repository:
+```
 git clone [your-github-repo-url]
 cd [repository-name]
+```
 
-Install dependencies:
-
+2. Install dependencies:
+```
 pip install -r requirements.txt
+```
 
-Download NLTK data:
+3. Download NLTK data:
 Run the following Python script to download the necessary NLTK packages:
-
+```
 import nltk
 nltk.download('stopwords')
 nltk.download('wordnet')
+```
 
-Run the analysis:
-Execute the main Python script or Jupyter Notebook (main.py or analysis.ipynb) to perform the data analysis, model training, and evaluation.
-
+4. Run the analysis:
+Execute the main Python script or Jupyter Notebook (`main.py` or `analysis.ipynb`) to perform the data analysis, model training, and evaluation.
+```
 python main.py
+```
