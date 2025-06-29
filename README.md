@@ -17,20 +17,19 @@ This repository provides a step-by-step implementation of a text classification 
 ## Dataset
 The project uses the [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews). This dataset contains 50,000 reviews, evenly split between positive and negative sentiments.
 
-Methodology
+## Methodology
 The project follows a structured machine learning pipeline:
 
-Preprocessing & EDA:
+1. Preprocessing & EDA: 
+- Removed HTML tags, punctuation, numbers, and emojis.
 
-Removed HTML tags, punctuation, numbers, and emojis.
+- Expanded contractions and converted text to lowercase.
 
-Expanded contractions and converted text to lowercase.
+- Performed lemmatization and removed English stopwords.
 
-Performed lemmatization and removed English stopwords.
+- Visualized the class balance and distribution of word counts per review.
 
-Visualized the class balance and distribution of word counts per review.
-
-Text Representation:
+2. Text Representation:
 
 Used TfidfVectorizer from Scikit-learn to convert preprocessed text into a matrix of TF-IDF features. A vocabulary size of 10,000 features was used.
 
